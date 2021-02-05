@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Nate M King - React Portfolio Redesign
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- [Employee Directory Deploy Link](http://www.natemking.dev/) -->
 
-In the project directory, you can run:
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/portfolio_2.0/blob/main/LICENSE)
 
-### `npm start`
+![css3 badge](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat&logo=css3&logoColor=white)
+![bootstrap badge](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=flat&logo=bootstrap&logoColor=white")
+![javascript badge](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=%23F7DF1E)
+![react badge](https://img.shields.io/badge/react%20-%2320232a.svg?&style=flat&logo=react&logoColor=%2361DAFB")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+## Table of Contents
+ * [Description](#description)
+    <!-- + [Scope of Work](#scope-of-work)
+    + [Rendering](#rendering)
+    + [State, Search, and Sort](#state-search-and-sort) -->
+  * [Screenshots](#screenshots)
+  * [License](#license)
+  * [Credits](#credits)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+### Scope of Work
+<!-- User Story
+```
+As a user, 
+I want to be able to view my entire employee directory at once so that I have quick access to their information.
+I want to be able to sort them in ascending and descending order by all available columns
+I want to be able to easily search for an employee 
+```
+The task at hand was to create a simple employee directory by using React. The employee list is provided from an API call to randomusers.me. The list must be searchable and sortable. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Rendering
+The app can be broken down into five custom components. There are Header & Wrapper, Table & SearchBar, and TableRow. There is also an API util that is being imported into the Wrapper which in turn sends its data down to its children. Only the wrapper is Class Component. The rest of the components are stateless functional components. 
 
-### `npm run build`
+The API data is called on Wrapper mount and set to state. It is then sent to the Table via props and there it is run through the `map()` method before being rendered down to the TableRow component. The TableRow component is set up to take the data and assign it to a relative table cell. The full table is rendered in the Wrapper with the SearchBar component. The Wrapper and Header are then, in turn, rendered to App.js and then to root. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### State, Search, and Sort
+All of the search and sort functionality is taken care of in the Wrapper as this is the stateful component in the app. The sorting is triggered by an onClick event on dynamically appearing icons in the table heading. I was able to keep the sorting ability to one function for all columns. I achieved this by nesting ternary's and have a global variable that changes with every click. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The search is taken care of in the `handleInputChange()` function. When a user types in characters into the search bar, the value is set to state. Then there is a nested async function that updates the rendered employee list. First, in the function, the current API results are set to a saved state object. This is needed so that when the user deletes characters the list reverse filters. Next, the live data is filtered based on what the user is entering and then that state is updated.
+  -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+<!-- ![app gif](public/images/screenshots/employee-directory.gif)
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![component tree](public/images/screenshots/app-component-tree.png)
+<br> -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Credits
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- * [Header Photo by Tanner Boriack on Unsplash](https://unsplash.com/@tannerboriack?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
-## Learn More
+* [Change bootstrap input focus glow](https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Applying lists and Keys correctly in React](https://reactjs.org/docs/lists-and-keys.html)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Sort and array of objects by keys of the objects](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/)  -->
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+GitHub: [@natemking](https://github.com/natemking/)
 
-### Analyzing the Bundle Size
+Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
