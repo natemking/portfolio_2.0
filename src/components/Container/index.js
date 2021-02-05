@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.css';
 import bgImage from './nate-in-smoke.jpg';
-import Footer from '../Footer';
 
 
-const Container = () => {
+
+const Container = (props) => {
     return ( 
-            <div>
+        <main className="wrapper">
             <img id="bg" src={bgImage} alt="nate in smoke"></img>
-                
-            </div>
+            {props.children}
+        </main>
      );
 }
  
