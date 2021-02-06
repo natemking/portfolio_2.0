@@ -1,0 +1,37 @@
+.container {
+    margin-top: 20px;
+}
+
+.container__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container p, .container h3 {
+    margin: 0;
+}
+
+.container img{
+    border: 3px solid rgb(191, 144, 0);
+    width: 100%;
+}
+
+.container i {
+    font-size: 30px;
+}
+
+.container i:hover {
+    cursor: pointer;
+}
+
+.container a, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+      margin: 0 auto;
+}
+
+.container a:hover {
+    color: rgb(116, 102, 52);
+}

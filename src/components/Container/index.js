@@ -8,7 +8,7 @@ import Sidenav from '../Sidenav';
 const Container = (props) => {
     return ( 
         <main className="wrapper">
-            <img id="bg" src={bgImage} alt="nate in smoke"></img>
+            <img className="wrapper__img" src={bgImage} alt="nate in smoke"></img>
             {props.children}
             <Sidenav />
         </main>

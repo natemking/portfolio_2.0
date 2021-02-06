@@ -1,8 +1,9 @@
 import React from 'react';
+import AboutContainer from '../components/AboutContainer';
 
 const About = () => {
     return ( 
-        <h1>This is About</h1>
+        <AboutContainer />
     );
 }
  

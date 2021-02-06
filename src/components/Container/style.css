@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
-#bg {
+.wrapper {
+  font-family: 'Cutive Mono', monospace;
+}
+
+.wrapper__img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -10;
 }
-
-
 
