@@ -58,7 +58,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 <!-- * [Getting Footer to appear fixed](https://stackoverflow.com/questions/25870365/troubles-with-keeping-footer-below-content)
 
-* [Change bootstrap input focus glow](https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow)
+* [React loading](https://medium.com/swlh/add-loading-animation-to-your-react-app-db3999a5c88d)
 
 * [Applying lists and Keys correctly in React](https://reactjs.org/docs/lists-and-keys.html)
 

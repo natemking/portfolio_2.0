@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import './style.css';
 import res1 from './res-1.jpg';
 import res2 from './res-2.jpg'
 import ResumeTitle from '../ResumeTitle';
-import ResumeImage from '../ResumeImage';
+// import ResumeImage from '../ResumeImage';
+import Loading from '../Loading';
+const ResumeImage = lazy(() => import('../ResumeImage'));
+
 
 const ResumeContainer = () => {
     const [page, setPage] = useState(res1);
@@ -25,10 +28,12 @@ const ResumeContainer = () => {
                 nextPage={ nextPage } 
                 togglePageNumber={ togglePageNumber } 
             />
-
-            <ResumeImage 
-                page={ page }
-            />
+            
+            <Suspense fallback={ <Loading /> }>
+                <ResumeImage
+                    page={ page }
+                />
+            </Suspense>
         
         </section>
     );
