@@ -1,0 +1,16 @@
+.home__title {
+    font-family: 'Cutive Mono', monospace;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    margin: 0 auto;
+}
+
+.home__title h1 {
+    font-size: calc(1.3em + 3vw);
+}
+
+.home__title h2 {
+    position: relative;
+    left: 25%;
+}

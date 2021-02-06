@@ -4,7 +4,7 @@ import './style.css'
 
 const Sidenav = () => {
     return (
-        <div className="sidenav">
+        <nav className="sidenav">
             <a href="https://github.com/natemking" target="_blank" rel="noreferrer">
                 <i class="fab fa-github"></i>
             </a>
@@ -14,7 +14,7 @@ const Sidenav = () => {
             <Link to="/contact">
                 <i class="far fa-envelope"></i>
             </Link>
-        </div>
+        </nav>
     );
 }
  

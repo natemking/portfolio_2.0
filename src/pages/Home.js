@@ -1,8 +1,9 @@
 import React from 'react';
+import HomeContainer from '../components/HomeContainer';
 
 const Home = () => {
     return ( 
-        <h1>Nate M King - Full Stack Developer</h1>
+        <HomeContainer />
     );
 }
  
