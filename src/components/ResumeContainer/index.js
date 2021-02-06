@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './style.css';
 import res1 from './res-1.jpg';
 import res2 from './res-2.jpg'
+import ResumeTitle from '../ResumeTitle';
+import ResumeImage from '../ResumeImage';
 
 const ResumeContainer = () => {
     const [page, setPage] = useState(res1);
@@ -18,27 +20,15 @@ const ResumeContainer = () => {
     return ( 
         <section className="container">
 
-            <section className="container__title ">
-               <section> 
-                   <h3>
-                       Resume.
-                    </h3>
-                </section>
-                <section>
-                    <span className={pageNumber === 'pg 1' ? 'show' : 'hidden'}>{ pageNumber }</span>
-                    <i className="fas fa-arrows-alt-h" onClick={() => { nextPage(); togglePageNumber(); }}></i>
-                    <span className={pageNumber === 'pg 2' ? 'show' : 'hidden'}>{ pageNumber }</span>
-                </section>
-                <section>
-                    <a href="/misc/NateMKing-resume.pdf" download>
-                        download
-                    </a>
-                </section>
-            </section>
+            <ResumeTitle 
+                pageNumber={ pageNumber } 
+                nextPage={ nextPage } 
+                togglePageNumber={ togglePageNumber } 
+            />
 
-            <section>
-                <img src={ page } alt="Nate M Kings resume" />
-            </section>
+            <ResumeImage 
+                page={ page }
+            />
         
         </section>
     );

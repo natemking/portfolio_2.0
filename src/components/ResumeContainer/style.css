@@ -10,6 +10,14 @@
     margin-bottom: 5px;
 }
 
+.container__title-show {
+    visibility: visible;
+}
+
+.container__title-hidden {
+    visibility: hidden;
+}
+
 .container p, .container h3 {
     margin: 0;
 }
@@ -39,10 +47,3 @@
     color: rgb(116, 102, 52);
 }
 
-.show {
-    visibility: visible;
-}
-
-.hidden {
-    visibility: hidden;
-}
