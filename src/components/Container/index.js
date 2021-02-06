@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import bgImage from './nate-in-smoke.jpg';
+import Sidenav from '../Sidenav';
 
 
 
@@ -9,6 +10,7 @@ const Container = (props) => {
         <main className="wrapper">
             <img id="bg" src={bgImage} alt="nate in smoke"></img>
             {props.children}
+            <Sidenav />
         </main>
      );
 }

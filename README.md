@@ -56,7 +56,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 
-<!-- * [Header Photo by Tanner Boriack on Unsplash](https://unsplash.com/@tannerboriack?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+<!-- * [Getting Footer to appear fixed](https://stackoverflow.com/questions/25870365/troubles-with-keeping-footer-below-content)
 
 * [Change bootstrap input focus glow](https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow)
 
