@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import FormInput from '../FormInput';
 import FormRow from '../FormRow';
 import FormTextArea from '../FormTextArea';
@@ -29,7 +30,32 @@ const ContactFormContainer = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault();
-      console.log(userName, userEmail, userMessage);
+
+        const templateParams = {
+            from_name: userName,
+            reply_to: userEmail,
+            message: userMessage
+        }
+
+
+        const sendEmail = async () => {
+        try {
+            const response = await emailjs.send(
+                process.env.REACT_APP_EMJS_SID, 
+                process.env.REACT_APP_EMJS_TID, 
+                templateParams, 
+                process.env.REACT_APP_EMJS_UID
+            );
+            console.log('SUCCESS!', response.status, response.text);
+            document.querySelector('form').reset();
+            setUserName('');
+            setUserEmail('');
+            setUserMessage('');
+        } catch (err) { console.error('FAILED...', err) }
+        };
+
+    sendEmail();
+        
     }
 
     return ( 
