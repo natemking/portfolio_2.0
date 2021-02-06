@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 5px;
 }
 
 .container p, .container h3 {
@@ -20,6 +21,8 @@
 
 .container i {
     font-size: 30px;
+    margin: 0 25px;
+    vertical-align: -7px;
 }
 
 .container i:hover {
@@ -34,4 +37,12 @@
 
 .container a:hover {
     color: rgb(116, 102, 52);
+}
+
+.show {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
 }
