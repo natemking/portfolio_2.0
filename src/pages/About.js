@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutContainer from '../components/AboutContainer';
+import About from '../components/About';
 
-const About = () => {
+const AboutPage = () => {
     return ( 
-        <AboutContainer />
+        <About />
     );
 }
  
-export default About;
+export default AboutPage;

@@ -3,11 +3,11 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Container from './components/Container';
-import Home from './pages/Home';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume'
-import Contact from './pages/Contact'
+import HomePage from './pages/Home';
+import AboutPage from './pages/About';
+import PortfolioPage from './pages/Portfolio';
+import ResumePage from './pages/Resume'
+import ContactPage from './pages/Contact'
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     <Router>
       <Navbar />
         <Container>
-          <Route exact path="/" component={ Home } />
-          <Route exact path="/about" component={ About } />
-          <Route exact path="/portfolio" component={ Portfolio } />
-          <Route exact path="/resume" component={ Resume } />
-          <Route exact path="/contact" component={ Contact } />
+          <Route exact path="/" component={ HomePage } />
+          <Route exact path="/about" component={ AboutPage } />
+          <Route exact path="/portfolio" component={ PortfolioPage } />
+          <Route exact path="/resume" component={ ResumePage } />
+          <Route exact path="/contact" component={ ContactPage } />
         </Container>
       <Footer />
     </Router>

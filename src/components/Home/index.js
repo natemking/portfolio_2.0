@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 
-const HomeContainer = () => {
+const Home = () => {
     return (
         <section className="home__title">
             <h1>Nate M King</h1>
@@ -10,4 +10,4 @@ const HomeContainer = () => {
     );
 }
  
-export default HomeContainer;
+export default Home;
