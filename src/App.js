@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy  } from "react";
 import { HashRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,6 +12,7 @@ const ResumePage = lazy(() => import('./pages/Resume'));
 const ContactPage = lazy(() => import('./pages/Contact'));
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
