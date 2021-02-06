@@ -59,8 +59,8 @@ const ContactFormContainer = () => {
     }
 
     return ( 
-        <section className="container-sm col-6 mt-5">
-            {/* <!-- Contact Form --> */}
+        <section className="container-sm col-6 mt-3">
+            <h3>Communicate.</h3>
             <form className="form-group" onSubmit={ handleFormSubmit }>
                 <FormRow>
                     <section className="col-md-6" >
