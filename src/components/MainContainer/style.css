@@ -12,3 +12,21 @@
   z-index: -10;
 }
 
+@media (max-width: 768px){
+  .wrapper__img {
+    width: 115%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 420px){
+  .wrapper__img {
+    position : absolute; /*can also use absolute and the parent element can have relative*/
+    top : 0;
+    left : 0;
+    width : 155%;
+    height : auto;
+  }
+}

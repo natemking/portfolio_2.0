@@ -8,7 +8,7 @@ import GalleryDeck from '../GalleryDeck';
 const Gallery = () => {
 
     const [ selectedWork, setSelectedWork ] = useState({
-        img: '',
+        gif:'',
         alt: '',
         name: '',
         desc: '',
@@ -25,7 +25,7 @@ const Gallery = () => {
         ));
 
         setSelectedWork({
-            img: userPick[0].img,
+            gif: userPick[0].gif,
             alt: userPick[0].alt,
             name: userPick[0].name,
             desc: userPick[0].desc,
@@ -44,7 +44,7 @@ const Gallery = () => {
     return (
         <section className='container col-9 mt-3 gallery'>
             <h3>Work.</h3>
-            <GalleryJumbo state={selectedWork} />
+            <GalleryJumbo state={ selectedWork } />
 
             <section className='row mt-5 gallery__deck justify-content-around'>
             { deck }

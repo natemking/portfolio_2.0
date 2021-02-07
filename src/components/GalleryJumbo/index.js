@@ -4,12 +4,12 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const GalleryJumbo = ({ state }) => {
-    const { img, alt, name, desc, tools, url, gitHub, about } = state
+    const { gif, alt, name, desc, tools, url, gitHub, about } = state
     return (
         <section className='row mt-3'>
             <section className='col-8 mt-5'>
                 <LazyLoadImage
-                    src={img.default}
+                    src={gif.default}
                     alt={ alt }
                     key={Date.now()}
                     className='img-fluid'
