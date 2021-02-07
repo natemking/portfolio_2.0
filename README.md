@@ -60,7 +60,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [React loading](https://medium.com/swlh/add-loading-animation-to-your-react-app-db3999a5c88d)
 
-* [Applying lists and Keys correctly in React](https://reactjs.org/docs/lists-and-keys.html)
+* [Fade in effect](https://www.joshwcomeau.com/snippets/react-components/fade-in/)
 
 * [Sort and array of objects by keys of the objects](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/)  -->
 
