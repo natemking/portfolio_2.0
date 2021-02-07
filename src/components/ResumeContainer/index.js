@@ -21,7 +21,7 @@ const ResumeContainer = () => {
     }
 
     return ( 
-        <section className="container">
+        <section className="container resume__container">
 
             <ResumeTitle 
                 pageNumber={ pageNumber } 
