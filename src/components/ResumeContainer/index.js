@@ -1,9 +1,9 @@
 import React, { useState, Suspense, lazy } from 'react';
+import '../../index.css'
 import './style.css';
 import res1 from './res-1.jpg';
 import res2 from './res-2.jpg'
 import ResumeTitle from '../ResumeTitle';
-// import ResumeImage from '../ResumeImage';
 import Loading from '../Loading';
 const ResumeImage = lazy(() => import('../ResumeImage'));
 

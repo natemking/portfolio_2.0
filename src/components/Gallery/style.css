@@ -1,3 +1,9 @@
-.gallery img {
-    border: 1px solid #909090;
+.gallery__deck img {
+    filter: grayscale(70%);
+    border: 1px solid lightgray;
+}
+
+.gallery__deck img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
 }
