@@ -9,24 +9,14 @@
   position: absolute;
   top: 0;
   left: 0;
+  min-height: 100%;
+  min-width: 1024px;
   z-index: -10;
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
   .wrapper__img {
-    width: 115%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-@media (max-width: 420px){
-  .wrapper__img {
-    position : absolute; /*can also use absolute and the parent element can have relative*/
-    top : 0;
-    left : 0;
-    width : 155%;
-    height : auto;
+    left: 50%;
+    margin-left: -512px;   /* 50% */
   }
 }

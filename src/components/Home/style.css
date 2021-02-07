@@ -1,15 +1,21 @@
 .home__title {
-    position: relative;
-    top: 100px;
-    left: 50px;
-    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: calc(4em + 10vh);
+    left: calc(4em + 5vw);
 }
 
 .home__title h1 {
-    font-size: calc(1.3em + 3vw);
+    font-size: calc(2em + 5vw);
 }
 
 .home__title h2 {
     position: relative;
-    left: 25%;
+    left: calc(5em + 30vw);
+}
+
+@media (max-width: 420px) {
+    .home__title h2 {
+        left: calc(4em + 33vw);
+    }
 }
