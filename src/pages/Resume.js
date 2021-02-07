@@ -1,10 +1,13 @@
 import React from 'react';
+import FadeIn from '../utils/FadeIn'
 import ResumeContainer from '../components/ResumeContainer';
 
 
 const Resume = () => {
     return (
-        <ResumeContainer />
+        <FadeIn delay={250} duration={450}>
+            <ResumeContainer />
+        </FadeIn>
     );
 }
  
