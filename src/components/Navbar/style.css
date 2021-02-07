@@ -1,0 +1,8 @@
+.nav-link {
+    opacity: 50% !important;
+}
+
+.home, .active {
+    color: rgb(116, 102, 52) !important;
+    opacity: 100% !important;
+}

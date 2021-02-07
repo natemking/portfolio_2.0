@@ -1,68 +1,64 @@
-[
+const work = [
     {
         "id": 1,
         "name": "Follow Your Money",
         "url":  "https://follow-yr-money.herokuapp.com/",
-        "img": "",
+        "img": require ("../components/Gallery/images/follow-your-money.jpg"),
         "alt": "budget app",
         "gitHub": "https://github.com/natemking/offline_budget_tracker",
         "tools": "HTML, CSS, Javascript, Node.js, Express.js, MongoDB, Mongoose, WebPack",
         "desc": "A simple to use finance tracker with charts to track your categorized spending",
-        "type": "solo"
     },
     {
         "id": 2,
         "name": "Note Taker",
         "url": "https://note-taker-nmk.herokuapp.com/",
-        "img": "",
+        "img": require("../components/Gallery/images/note-taker.jpg"),
         "alt": "note-taker app",
         "gitHub": "https://github.com/natemking/note_taker",
         "tools": "HTML, CSS, Bootstrap, JjQuery, Node.js, Express.js",
         "desc": "An easy way to keep notes. ",
-        "type": "solo"
     },
     {
         "id": 3,
         "name": "Password Generator",
         "url": "https://www.natemking.dev/pw_generator",
-        "img": "",
+        "img": require("../components/Gallery/images/password-generator.jpg"),
         "alt": "password generator app",
         "gitHub": "https://github.com/natemking/pw_generator",
         "tools": "HTML, CSS, Bootstrap, Javascript,",
         "desc": "A fun, stylized random password generator which compiles per user input",
-        "type": "solo"
+    },
+    {   
+        "id": 4,
+        "name": "Soup & Chef",
+        "url": "https://shop-n-chef.herokuapp.com",
+        "img": require("../components/Gallery/images/shop-n-chef.jpg"),
+        "alt": "shop & chef app",
+        "gitHub": "https://github.com/natemking/shop_n_chef",
+        "tools": "Group Project. My role - Front-end: jQuery. Back-end: Node.js, Express.js, MySql, Sequelize",
+        "desc": "Add items to a shopping list then search for a recipe and ingredients from those recipes to your list wth a simple click. ",
+    },
+    {   
+        "id": 5,
+        "name": "THme",
+        "url": "https://www.natemking.dev/THme",
+        "img": require("../components/Gallery/images/thme.jpg"),
+        "alt": "thme app",
+        "gitHub": "https://github.com/natemking/THme",
+        "tools": "Group Project. My role - jQuery & API mgmt",
+        "desc": "Helping medical Cannabis patients by recommending strains per certain ailments as well as recommending other herbal remedies.",
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Employee Tracker",
         "url": "https://github.com/natemking/employee_tracker",
-        "img": "",
+        "img": require("../components/Gallery/images/employee_tracker.gif"),
         "alt": "node.js employee tracker app gif",
         "gitHub": "https://github.com/natemking/employee_tracker",
         "tools": "Node.js, MySql",
         "desc": "CLI app that assists an employers ability to add, view, remove, and update their employees, roles, and departments",
-        "type": "solo"
     },
-    {   
-        "id": 5,
-        "name": "Soup & Chef",
-        "url": "https://shop-n-chef.herokuapp.com",
-        "img": "",
-        "alt": "shop & chef app",
-        "gitHub": "https://github.com/natemking/shop_n_chef",
-        "tools": "HTML, CSS, BootStrap, jQuery, Node.js, Express.js, EJS, MySql, Sequelize",
-        "desc": "Add items to a shopping list then search for a recipe and ingredients from those recipes to your list wth a simple click. ",
-        "type": "group"
-    },
-    {   
-        "id": 6,
-        "name": "THme",
-        "url": "https://www.natemking.dev/THme",
-        "img": "",
-        "alt": "thme app",
-        "gitHub": "https://github.com/natemking/THme",
-        "tools": "HTML, CSS, jQuery",
-        "desc": "Helping medical Cannabis patients by recommending strains per certain ailments as well as recommending other herbal remedies.",
-        "type": "group"
-    }
 ]
+
+export default work;

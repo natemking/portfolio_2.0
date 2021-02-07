@@ -62,7 +62,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Fade in effect](https://www.joshwcomeau.com/snippets/react-components/fade-in/)
 
-* [Sort and array of objects by keys of the objects](https://flaviocopes.com/how-to-sort-array-of-objects-by-property-javascript/)  -->
+* [Pathing local images in a seed json correctly](https://forum.freecodecamp.org/t/display-image-from-local-json-js-object-using-react/408351/14)  -->
 
 ---
 

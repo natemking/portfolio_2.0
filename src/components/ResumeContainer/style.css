@@ -37,13 +37,4 @@
     cursor: pointer;
 }
 
-.container a, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
-      margin: 0 auto;
-}
-
-.container a:hover {
-    color: rgb(116, 102, 52);
-}
 
