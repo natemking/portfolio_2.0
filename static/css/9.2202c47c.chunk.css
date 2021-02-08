@@ -1,0 +1,2 @@
+.home__container{position:relative;height:500px}.home__title{width:100%;position:absolute;top:calc(4em + 10vh);left:calc(4em + 5vw)}.home__title h1{font-size:calc(2em + 5vw)}.home__title h2{position:relative;left:calc(5em + 30vw)}@media (max-width:420px){.home__title{position:static}.home__title h1{position:static;font-size:calc(1.6em + 5vw);margin-left:10px}.home__title h2{position:static;float:right}}
+/*# sourceMappingURL=9.2202c47c.chunk.css.map */
