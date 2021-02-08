@@ -6,7 +6,7 @@ import GalleryDeck from '../GalleryDeck';
 
 
 const Gallery = () => {
-
+    // State for project the user chooses
     const [ selectedWork, setSelectedWork ] = useState({
         gif:'',
         alt: '',
@@ -18,6 +18,7 @@ const Gallery = () => {
         about: false
     })
 
+    // On click set state to the project the user chose
     const handleClickEvent = (e) => {
         
         let userPick = work.filter(work => (
@@ -41,14 +42,19 @@ const Gallery = () => {
         <GalleryDeck key={ work.id } id={ work.id } img={ work.img } alt={ work.alt } onClick={ handleClickEvent }/>
     ))
 
+    // Render the gallery
     return (
         <section className='container col-9 mt-3 gallery'>
-            <h3>Work.</h3>
+            <h3>
+                Work.
+            </h3>
+
             <GalleryJumbo state={ selectedWork } />
 
             <section className='row mt-5 gallery__deck justify-content-around'>
                 { deck }
             </section>
+            
         </section>
     );
 }

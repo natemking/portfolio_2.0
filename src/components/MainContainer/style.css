@@ -17,14 +17,14 @@
   z-index: -10;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media (max-width: 1024px) { 
   .wrapper__img {
     left: 50%;
     margin-left: -512px;   /* 50% */
   }
 }
 
-@media screen and (max-width: 768px) { /* Specific to this particular image */
+@media (max-width: 768px) { 
   .wrapper__img {
     position: fixed;
   }

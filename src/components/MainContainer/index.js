@@ -2,10 +2,10 @@ import React, { Suspense, lazy } from 'react';
 import './style.css';
 import Loading from '../Loading';
 
-const MainImage = lazy(() => import('../MainImage'))
 const Sidenav = lazy(() => import('../Sidenav'))
 
 const Container = (props) => {
+    // Render main container
     return ( 
         <Suspense fallback={<Loading />} >
             <main className="wrapper">

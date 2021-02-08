@@ -2,9 +2,8 @@ import React from 'react';
 
 const ResumeTitle = (props) => {
    const { pageNumber, nextPage, togglePageNumber } = props
-
+    // Render the resume title bar w/ a clickable icon to switch pages & a link to download resume.
     return (
-
         <section className="container__title ">
 
             <section>

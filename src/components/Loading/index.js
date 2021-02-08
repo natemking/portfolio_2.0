@@ -5,6 +5,7 @@ import './style.css'
 
 const Loading = () => {
     return (
+        // Render loading animation
          <ReactLoading type={'cylon'} color={'#746634'} height={'40%'} width={'20%'} delay={500} className={'loader'}/>
     );
 }

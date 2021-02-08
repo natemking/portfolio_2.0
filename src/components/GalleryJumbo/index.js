@@ -5,8 +5,10 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const GalleryJumbo = ({ state }) => {
     const { gif, alt, name, desc, tools, url, gitHub, about } = state
+    // Render the gallery as per users choice. Lazy load the jumbo w/ a blur effect
     return (
         <section className='row mt-3' style={about ? { display: 'flex' } : { display: 'none' }}>
+
             <section className='col-lg-8 mt-5'>
                 <LazyLoadImage
                     src={gif.default}
@@ -16,6 +18,7 @@ const GalleryJumbo = ({ state }) => {
                     effect='blur'
                 />
             </section>
+            
             <section className='col-lg-4 gallery__jumbo-text' >
                 <h4 className='text-right'>{ name }</h4>
                 <hr />

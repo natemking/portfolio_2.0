@@ -9,17 +9,21 @@ const ResumeImage = lazy(() => import('../ResumeImage'));
 
 
 const ResumeContainer = () => {
+    // State for resume page displayed and its page number
     const [page, setPage] = useState(res1);
     const [pageNumber, setPageNumber] = useState('pg 1');
 
+    // Function to switch pages when icon clicked
     const nextPage = () => {
       page === res1 ? setPage(res2) : setPage(res1);
     }
 
+    //Function to toggle page numbers display when icon clicked
     const togglePageNumber = () => {
       page !== res1 ? setPageNumber('pg 1') : setPageNumber('pg 2');
     }
 
+    // Render resume and title 
     return ( 
         <section className="container resume__container">
 

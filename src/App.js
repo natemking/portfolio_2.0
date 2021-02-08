@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainContainer from './components/MainContainer';
 import Loading from "./components/Loading";
-// import bgImage from './components/MainImage/nate-in-smoke.jpg'
 
 const MainImage = lazy(() => import('./components/MainImage'))
 const HomePage = lazy(() => import('./pages/Home'));
@@ -15,14 +14,13 @@ const ContactPage = lazy(() => import('./pages/Contact'));
 
 
 function App() {
-  
+  // Render navbar, bg image, all pages, & footer. Use code splitting and loading animation for slower connections. 
   return (
     <Router>
       <Suspense fallback={ <Loading /> }>
-     
       <Navbar />
         <MainImage />
-        <MainContainer>
+          <MainContainer>
           
             <Route exact path="/" component={ HomePage } />
             <Route exact path="/about" component={ AboutPage } />
@@ -30,8 +28,8 @@ function App() {
             <Route exact path="/resume" component={ ResumePage } />
             <Route exact path="/contact" component={ ContactPage } />
           
-        </MainContainer>
-      <Footer />
+          </MainContainer>
+        <Footer />
       </Suspense>
     </Router>
   );
