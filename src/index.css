@@ -2,15 +2,3 @@
 html, body {
     overflow-x: hidden;
 }
-
-
-a, a:focus, a:active {
-      text-decoration: none ; 
-      color: inherit ;
-      margin: 0 auto ;
-}
-
-a:hover {
-    color: rgb(116, 102, 52);
-    opacity: 1;
-}
