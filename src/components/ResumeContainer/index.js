@@ -1,5 +1,4 @@
 import React, { useState, Suspense, lazy } from 'react';
-import '../../index.css'
 import './style.css';
 import res1 from './res-1.jpg';
 import res2 from './res-2.jpg'

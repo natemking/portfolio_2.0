@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './style.css';
-import '../../index.css';
-
 
 const Sidenav = () => {
     //Render sidenav w/ links to linkedin, github, & contact form

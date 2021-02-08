@@ -18,18 +18,18 @@ function App() {
   return (
     <Router>
       <Suspense fallback={ <Loading /> }>
-      <Navbar />
         <MainImage />
-          <MainContainer>
-          
-            <Route exact path="/" component={ HomePage } />
-            <Route exact path="/about" component={ AboutPage } />
-            <Route exact path="/portfolio" component={ PortfolioPage } />
-            <Route exact path="/resume" component={ ResumePage } />
-            <Route exact path="/contact" component={ ContactPage } />
-          
-          </MainContainer>
-        <Footer />
+          <Navbar />
+            <MainContainer>
+            
+              <Route exact path="/" component={ HomePage } />
+              <Route exact path="/about" component={ AboutPage } />
+              <Route exact path="/portfolio" component={ PortfolioPage } />
+              <Route exact path="/resume" component={ ResumePage } />
+              <Route exact path="/contact" component={ ContactPage } />
+            
+            </MainContainer>
+          <Footer />
       </Suspense>
     </Router>
   );

@@ -2,7 +2,13 @@
     opacity: 50% !important;
 }
 
+.nav-link:hover {
+    color: rgb(116, 102, 52) !important;
+    opacity: 100% !important;
+}
+
 .home, .active {
     color: rgb(116, 102, 52) !important;
     opacity: 100% !important;
 }
+

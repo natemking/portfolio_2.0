@@ -39,6 +39,17 @@
     cursor: pointer;
 }
 
+.container__title a, a:focus, a:active {
+      text-decoration: none !important; 
+      color: inherit !important;
+      margin: 0 auto !important;
+}
+
+.container__title a:hover {
+    color: rgb(116, 102, 52) !important;
+    opacity: 100% !important;
+}
+
 @media (max-width: 420px) {
     .container__title h3 {
         display: none;
