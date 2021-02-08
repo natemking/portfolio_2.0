@@ -1,0 +1,2 @@
+.container{margin-top:20px;position:relative;z-index:10}.container__title{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;margin-bottom:5px}.container__title-show{visibility:visible}.container__title-hidden{visibility:hidden}.container h3,.container p{margin:0}.resume__container img{border:3px solid #bf9000;width:100%}.container i{font-size:30px;margin:0 25px;vertical-align:-7px}.container i:hover{cursor:pointer}@media (max-width:420px){.container__title h3{display:none}}
+/*# sourceMappingURL=10.89e5bcf1.chunk.css.map */
