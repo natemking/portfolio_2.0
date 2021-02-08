@@ -1,0 +1,2 @@
+.gallery__deck img{-webkit-filter:grayscale(70%);filter:grayscale(70%);border:1px solid #d3d3d3}.gallery__deck img:hover{-webkit-filter:grayscale(0);filter:grayscale(0);cursor:pointer}.gallery__jumbo a,a:active,a:focus{text-decoration:none;color:inherit;margin:0 auto}.gallery__jumbo a:hover{color:#746634;opacity:1}@media (max-width:768px){.gallery__jumbo-text{background:hsla(0,0%,100%,.5);margin-top:25px}.gallery__deck{margin:0}}
+/*# sourceMappingURL=5.4e96520d.chunk.css.map */

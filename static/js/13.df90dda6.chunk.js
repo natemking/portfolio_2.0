@@ -1,0 +1,2 @@
+(this["webpackJsonpportfolio_2.0"]=this["webpackJsonpportfolio_2.0"]||[]).push([[13],{81:function(i,t,c){"use strict";c.r(t);c(0);var s=c(1);t.default=function(i){var t=i.id,c=i.img,l=i.alt,o=i.onClick;return Object(s.jsx)("section",{className:"col-lg-2 mt-4",children:Object(s.jsx)("img",{src:c.default,alt:l,id:t,className:"img-fluid",onClick:o})})}}}]);
+//# sourceMappingURL=13.df90dda6.chunk.js.map
