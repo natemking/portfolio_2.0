@@ -61,7 +61,7 @@ const ContactFormContainer = () => {
     }
 
     return ( 
-        <section className="container-sm col-6 mt-3">
+        <section className="container-sm col-md-8 col-lg-6 mt-3">
 
             <h3>Communicate.</h3>
 

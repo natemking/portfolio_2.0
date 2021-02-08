@@ -2,6 +2,9 @@
 
 .wrapper {
   font-family: 'Cutive Mono', monospace;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper__img {
@@ -18,5 +21,11 @@
   .wrapper__img {
     left: 50%;
     margin-left: -512px;   /* 50% */
+  }
+}
+
+@media screen and (max-width: 768px) { /* Specific to this particular image */
+  .wrapper__img {
+    position: fixed;
   }
 }

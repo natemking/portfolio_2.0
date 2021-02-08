@@ -47,7 +47,7 @@ const Gallery = () => {
             <GalleryJumbo state={ selectedWork } />
 
             <section className='row mt-5 gallery__deck justify-content-around'>
-            { deck }
+                { deck }
             </section>
         </section>
     );

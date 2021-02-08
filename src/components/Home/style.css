@@ -1,3 +1,8 @@
+.home__container {
+    position: relative; 
+    height: 500px;
+}
+
 .home__title {
     width: 100%;
     position: absolute;
@@ -15,7 +20,17 @@
 }
 
 @media (max-width: 420px) {
+    .home__title {
+        position: static;
+    }
+    .home__title  h1 {
+        position: static;
+        font-size: calc(1.6em + 5vw);
+        margin-left: 10px;
+    }
+
     .home__title h2 {
-        left: calc(4em + 33vw);
+        position: static;
+        float: right;
     }
 }

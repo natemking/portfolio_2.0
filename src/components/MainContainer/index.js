@@ -8,8 +8,7 @@ const Sidenav = lazy(() => import('../Sidenav'))
 const Container = (props) => {
     return ( 
         <Suspense fallback={<Loading />} >
-            <main className="wrapper container-sm">
-                <MainImage />
+            <main className="wrapper">
                 {props.children}
                 <Sidenav />
             </main>

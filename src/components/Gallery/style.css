@@ -7,3 +7,17 @@
     filter: grayscale(0%);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    /* .gallery{
+        margin: 0;
+    } */
+    .gallery__jumbo-text {
+        background: rgba(255,255,255,.5);
+        margin-top: 25px;
+    }   
+
+     .gallery__deck {
+        margin: 0;
+    }
+}
