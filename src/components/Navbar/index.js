@@ -21,22 +21,22 @@ function Navbar() {
             <div>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link home">
+                        <Link to="/"  id="nav__link-home" className="nav-link home">
                             NMK
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" key={Date.now()} className={ hash === '#/about' ? "nav-link active" : "nav-link"}>
+                        <Link to="/about" id="nav__link" key={Date.now()} className={ hash === '#/about' ? "nav-link active" : "nav-link"}>
                             About
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/portfolio" key={Date.now()} className={hash === '#/portfolio' ? "nav-link active" : "nav-link"}>
+                <li className="nav-item">
+                        <Link to="/portfolio" id="nav__link" key={Date.now()} className={hash === '#/portfolio' ? "nav-link active" : "nav-link"}>
                             Portfolio
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link to="/resume" key={Date.now()}  className={hash === '#/resume' ? "nav-link active" : "nav-link"}>
+                <li className="nav-item">
+                        <Link to="/resume" id="nav__link" key={Date.now()}  className={hash === '#/resume' ? "nav-link active" : "nav-link"}>
                             Resume
                         </Link>
                     </li>
