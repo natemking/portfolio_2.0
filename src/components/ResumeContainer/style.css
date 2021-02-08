@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.container__title a, a:focus, a:active {
+/* .container__title a, a:focus, a:active {
       text-decoration: none; 
       color: inherit;
       margin: 0 auto;
@@ -48,7 +48,7 @@
 .container__title a:hover {
     color: rgb(116, 102, 52);
     opacity: 1;
-}
+} */
 
 @media (max-width: 420px) {
     .container__title h3 {
