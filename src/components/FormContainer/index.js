@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import './style.css'
 import emailjs from 'emailjs-com';
 import FormInput from '../FormInput';
@@ -9,11 +10,12 @@ import Alert from '../Alert';
 
 
 const ContactFormContainer = () => {
-    // State for user inputs and alert for email send status
+    // State for user inputs, alert for email send status, & btn disable
     const [userName, setUserName] = useState('');
     const [userEmail, setUserEmail] = useState('');
-    const [userMessage, setUserMessage] = useState('')
-    const [emailAlert, setEmailAlert] = useState({ alert: false, type: false, msg:''})
+    const [userMessage, setUserMessage] = useState('');
+    const [emailAlert, setEmailAlert] = useState({ alert: false, type: false, msg:''});
+    const [btnDisable, setBtnDisable] = useState(true)
 
     // Set state of user inputs
     const handleInputChange = e => {
@@ -32,6 +34,11 @@ const ContactFormContainer = () => {
                 break;
         }
     }
+
+    // Set state of button to active if captcha is passed
+    function captchaOnChange() {
+        setBtnDisable(false)
+    };
 
     // On submit send email to natemking@gmail.com using emailjs
     const handleFormSubmit = e => {
@@ -89,7 +96,11 @@ const ContactFormContainer = () => {
 
                 <FormRow>
                     <section className="col-md-4">
-                        <SubmitBtn />
+                        <ReCAPTCHA
+                            sitekey={ process.env.REACT_APP_GOOG_RECAP_KEY }
+                            onChange={ captchaOnChange }
+                        />
+                        <SubmitBtn btnDisable={ btnDisable }/>
                     </section>
                 </FormRow>
 

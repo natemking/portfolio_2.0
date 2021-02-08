@@ -11,14 +11,3 @@
     color: rgb(0 0 0 / 45%);
     font-size: 2rem;
 }
-
-.sidenav a, a:focus, a:active {
-      text-decoration: none !important; 
-      color: inherit !important;
-      margin: 0 auto !important;
-}
-
-.sidenav a:hover {
-    color: rgb(116, 102, 52) !important;
-    opacity: 100% !important;
-}
