@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import './style.css'
+import Loading from '../Loading';
 import work from '../../utils/work'
-import GalleryJumbo from '../GalleryJumbo';
-import GalleryDeck from '../GalleryDeck';
+// import GalleryJumbo from '../GalleryJumbo';
+// import GalleryDeck from '../GalleryDeck';
+
+const GalleryJumbo = lazy(() => import('../GalleryJumbo'));
+const GalleryDeck = lazy(() => import('../GalleryDeck'));
 
 
 const Gallery = () => {
@@ -48,12 +52,17 @@ const Gallery = () => {
             <h3>
                 Work.
             </h3>
+            <Suspense fallback={ <Loading /> }>
+                <GalleryJumbo state={ selectedWork } />
+            </Suspense>
 
-            <GalleryJumbo state={ selectedWork } />
-
-            <section className='row mt-5 gallery__deck justify-content-around'>
-                { deck }
-            </section>
+            
+                <section className='row mt-5 gallery__deck justify-content-around'>
+                    <Suspense fallback={ <Loading /> }>
+                        { deck }
+                    </Suspense>
+                </section>
+            
             
         </section>
     );
