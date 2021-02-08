@@ -1,2 +1,0 @@
-(this["webpackJsonpportfolio_2.0"]=this["webpackJsonpportfolio_2.0"]||[]).push([[12],{83:function(t,s,e){"use strict";e.r(s);e(0);var i=e.p+"static/media/nate-in-smoke.26744637.jpg",a=e(1);s.default=function(){return Object(a.jsx)("img",{className:"wrapper__img",src:i,alt:"nate in smoke"})}}}]);
-//# sourceMappingURL=12.02d352f2.chunk.js.map
