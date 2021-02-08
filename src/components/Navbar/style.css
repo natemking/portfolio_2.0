@@ -1,9 +1,9 @@
 /* Note-- had to use ID's vs class to override bootstrap styles on the links */
 #nav__link {
-    opacity: 50%;
+    opacity: .8;
 }
 
 #nav__link-home , #nav__link:hover, #nav__link.active  {
     color: rgb(116, 102, 52);
-    opacity: 100%;
+    opacity: 1;
 }
