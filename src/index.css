@@ -3,7 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 
-a, a:focus, a:active {
+/* a, a:focus, a:active {
       text-decoration: none !important; 
       color: inherit !important;
       margin: 0 auto !important;
@@ -12,6 +12,6 @@ a, a:focus, a:active {
 a:hover {
     color: rgb(116, 102, 52) !important;
     opacity: 100% !important;
-}
+} */
 
 
